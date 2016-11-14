@@ -1,0 +1,213 @@
+<html>
+
+<head>
+
+ <script src="jquery-3.1.1.min.js"></script> 
+ <script src="owl.carousel.js"></script>
+ 
+ <style>
+#owl-demo .item{
+  background: #3fbf79;
+  margin: 2px;
+  padding:2px;
+  color: #FFF;
+  border-radius: 3px;
+  text-align: center;
+}
+.owl-controls{
+display:none!important;
+}
+.content{
+	 background-color: #3fbfb3;
+	 margin:5px;
+	 height:100px;
+	 display:none;
+}
+.content-show{
+display:block;
+}
+
+#owl-demo-nested .item{
+  background: #9fbf3f;
+  margin: 2px;
+  padding:2px;
+  color: #FFF;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#owl-demo-nested2 .item{
+  background: #ded825;
+  margin: 2px;
+  padding:2px;
+  color: #FFF;
+  border-radius: 3px;
+  text-align: center;
+}
+</style>
+
+ <link href="owl.carousel.css" rel="stylesheet">
+ <link href="owl.theme.css" rel="stylesheet">
+</head>
+<body>
+<div id="owl-demo" class="owl-carousel ">
+  <div class="item" data-tabid="Tab-1">Tab-1</div>
+  <div class="item" data-tabid="Tab-2">Tab-2</div>
+  <div class="item" data-tabid="Tab-3">Tab-3</div>
+  <div class="item" data-tabid="Tab-4">Tab-4</div>
+  <div class="item" data-tabid="Tab-5">Tab-5</div>
+  <div class="item" data-tabid="Tab-6">Tab-6</div>
+  <div class="item" data-tabid="Tab-7">Tab-7</div>
+  <div class="item" data-tabid="Tab-8">Tab-8</div>
+  <div class="item" data-tabid="Tab-9">Tab-9</div>
+  <div class="item" data-tabid="Tab-10">Tab-10</div>
+  <div class="item" data-tabid="Tab-11">Tab-11</div>
+  <div class="item" data-tabid="Tab-12">Tab-12</div>
+  <div class="item" data-tabid="Tab-13">Tab-13</div>
+  <div class="item" data-tabid="Tab-14">Tab-14</div>
+  <div class="item" data-tabid="Tab-15">Tab-15</div>
+  <div class="item" data-tabid="Tab-16">Tab-16</div>
+</div>
+<div class="content-wrapper">
+	<div id="Tab-1" class="content content-show">Content-1
+			<!-- Level1 nested header set-->
+			<div id="owl-demo-nested" class="owl-carousel ">
+				  <div class="item" data-tabid="nested-1">Tab-1</div>
+				  <div class="item" data-tabid="nested-2">Tab-2</div>
+				  <div class="item" data-tabid="nested-3">Tab-3</div>
+				  <div class="item" data-tabid="nested-4">Tab-4</div>
+				  <div class="item" data-tabid="nested-5">Tab-5</div>
+				  <div class="item" data-tabid="nested-6">Tab-6  </div>
+				  <div class="item" data-tabid="nested-7">Tab-7</div>
+				  <div class="item" data-tabid="nested-8">Tab-8</div>
+				  <div class="item" data-tabid="nested-9">Tab-9</div>
+				  <div class="item" data-tabid="nested-10">Tab-10</div>
+				  <div class="item" data-tabid="nested-11">Tab-11</div>
+				  <div class="item" data-tabid="nested-12">Tab-12</div>
+				  <div class="item" data-tabid="nested-13">Tab-13</div>
+				  <div class="item" data-tabid="nested-14">Tab-14</div>
+				  <div class="item" data-tabid="nested-15">Tab-15</div>
+				  <div class="item" data-tabid="nested-16">Tab-16</div>
+			</div>
+			<!-- Level1 Nested Body set-->
+			<div class="content-wrapper">
+					<div id="nested-1" class="content content-show">Content-1</div>
+					<div id="nested-2" class="content">Content-2</div>
+					<div id="nested-3" class="content">Content-3</div>
+					<div id="nested-4" class="content">Content-4</div>
+					<div id="nested-5" class="content">Content-5
+							<!-- Leve2 nested header set-->
+								<div id="owl-demo-nested2" class="owl-carousel ">
+									  <div class="item" data-tabid="nested2-1">Tab-1</div>
+									  <div class="item" data-tabid="nested2-2">Tab-2</div>
+									  <div class="item" data-tabid="nested2-3">Tab-3</div>
+									  <div class="item" data-tabid="nested2-4">Tab-4</div>
+									  <div class="item" data-tabid="nested2-5">Tab-5</div>
+									  <div class="item" data-tabid="nested2-6">Tab-6  </div>
+									  <div class="item" data-tabid="nested2-7">Tab-7</div>
+									  <div class="item" data-tabid="nested2-8">Tab-8</div>
+									  <div class="item" data-tabid="nested2-9">Tab-9</div>
+									  <div class="item" data-tabid="nested2-10">Tab-10</div>
+									  <div class="item" data-tabid="nested2-11">Tab-11</div>
+									  <div class="item" data-tabid="nested2-12">Tab-12</div>
+									  <div class="item" data-tabid="nested2-13">Tab-13</div>
+									  <div class="item" data-tabid="nested2-14">Tab-14</div>
+									  <div class="item" data-tabid="nested2-15">Tab-15</div>
+									  <div class="item" data-tabid="nested2-16">Tab-16</div>
+								</div>
+							<!-- Leve2 Nested Body set-->
+							<div class="content-wrapper">
+								<div id="nested2-1" class="content">Content-2</div>
+								<div id="nested2-2" class="content">Content-2</div>
+								<div id="nested2-3" class="content">Content-3</div>
+								<div id="nested2-4" class="content">Content-4</div>
+								<div id="nested2-5" class="content">Content-5</div>
+								<div id="nested2-6" class="content">Content-6</div>
+								<div id="nested2-7" class="content">Content-7</div>
+								<div id="nested2-8" class="content">Content-8</div>
+								<div id="nested2-9" class="content">Content-9</div>
+								<div id="nested2-10" class="content">Content-10</div>
+								<div id="nested2-11" class="content">Content-11</div>
+								<div id="nested2-12" class="content">Content-12</div>
+								<div id="nested2-13" class="content">Content-13</div>
+								<div id="nested2-14" class="content">Content-14</div>
+								<div id="nested2-15" class="content">Content-15</div>
+								<div id="nested2-16" class="content">Content-16</div>
+							</div>
+					</div>
+					<div id="nested-6" class="content">Content-6</div>
+					<div id="nested-7" class="content">Content-7</div>
+					<div id="nested-8" class="content">Content-8</div>
+					<div id="nested-9" class="content">Content-9</div>
+					<div id="nested-10" class="content">Content-10</div>
+					<div id="nested-11" class="content">Content-11</div>
+					<div id="nested-12" class="content">Content-12</div>
+					<div id="nested-13" class="content">Content-13</div>
+					<div id="nested-14" class="content">Content-14</div>
+					<div id="nested-15" class="content">Content-15</div>
+					<div id="nested-16" class="content">Content-16</div>
+				</div>
+	</div>
+	<div id="Tab-2" class="content">Content-2</div>
+	<div id="Tab-3" class="content">Content-3</div>
+	<div id="Tab-4" class="content">Content-4</div>
+	<div id="Tab-5" class="content">Content-5</div>
+	<div id="Tab-6" class="content">Content-6</div>
+	<div id="Tab-7" class="content">Content-7</div>
+	<div id="Tab-8" class="content">Content-8</div>
+	<div id="Tab-9" class="content">Content-9</div>
+	<div id="Tab-10" class="content">Content-10</div>
+	<div id="Tab-11" class="content">Content-11</div>
+	<div id="Tab-12" class="content">Content-12</div>
+	<div id="Tab-13" class="content">Content-13</div>
+	<div id="Tab-14" class="content">Content-14</div>
+	<div id="Tab-15" class="content">Content-15</div>
+	<div id="Tab-16" class="content">Content-16</div>
+</div>
+</body>
+
+<script>
+
+$(document).ready(function() {
+ 
+  var owl = $("#owl-demo");
+ 
+  owl.owlCarousel({
+      items : 10, //10 items above 1000px browser width
+      itemsDesktop : [1000,5], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,3], // betweem 900px and 601px
+      itemsTablet: [600,2], //2 items between 600 and 0
+      itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+  });
+ 
+ var owlnested = $("#owl-demo-nested");
+ 
+  owlnested.owlCarousel({
+      items : 10, //10 items above 1000px browser width
+      itemsDesktop : [1000,5], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,3], // betweem 900px and 601px
+      itemsTablet: [600,2], //2 items between 600 and 0
+      itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+  });
+   var owlnested2 = $("#owl-demo-nested2");
+ 
+  owlnested2.owlCarousel({
+      items : 10, //10 items above 1000px browser width
+      itemsDesktop : [1000,5], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,3], // betweem 900px and 601px
+      itemsTablet: [600,2], //2 items between 600 and 0
+      itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+  });
+  
+  $(".item").click(function(){
+	debugger;
+	//$(".content-wrapper>.content").removeClass("content-show");
+	var tabid=$(this).attr("data-tabid");
+	$("#"+tabid).siblings(".content-show").removeClass("content-show")
+	$("#"+tabid).addClass("content-show");
+  });
+ 
+});
+
+</script>
+</html>
