@@ -3,7 +3,7 @@
 <head>
 
  <script src="jquery-3.1.1.min.js"></script> 
- <script src="owl.carousel.js"></script>
+ <script src="dist/owl.carousel.js"></script>
  
  <style>
 #owl-demo .item{
@@ -46,12 +46,12 @@ display:block;
 }
 </style>
 
- <link href="owl.carousel.css" rel="stylesheet">
- <link href="owl.theme.css" rel="stylesheet">
+ <link href="dist/assets/owl.carousel.css" rel="stylesheet">
+ <link href="dist/assets/owl.theme.default.css" rel="stylesheet">
 </head>
 <body>
 <div id="owl-demo" class="owl-carousel ">
-  <div class="item" data-tabid="Tab-1">Tab-1</div>
+  <div class="item" data-tabid="Tab-1">Tab-1 ghjgjhjh hjhfjhgh</div>
   <div class="item" data-tabid="Tab-2">Tab-2</div>
   <div class="item" data-tabid="Tab-3">Tab-3</div>
   <div class="item" data-tabid="Tab-4">Tab-4</div>
@@ -172,32 +172,29 @@ $(document).ready(function() {
  
   var owl = $("#owl-demo");
  
-  owl.owlCarousel({
-      items : 10, //10 items above 1000px browser width
-      itemsDesktop : [1000,5], //5 items between 1000px and 901px
-      itemsDesktopSmall : [900,3], // betweem 900px and 601px
-      itemsTablet: [600,2], //2 items between 600 and 0
-      itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
-  });
+ owl.owlCarousel({
+	margin:20,
+    loop:false,
+    autoWidth:true,
+   
+});
  
  var owlnested = $("#owl-demo-nested");
  
   owlnested.owlCarousel({
-      items : 10, //10 items above 1000px browser width
-      itemsDesktop : [1000,5], //5 items between 1000px and 901px
-      itemsDesktopSmall : [900,3], // betweem 900px and 601px
-      itemsTablet: [600,2], //2 items between 600 and 0
-      itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
-  });
+    margin:20,
+    loop:false,
+    autoWidth:true,
+   
+});
    var owlnested2 = $("#owl-demo-nested2");
  
   owlnested2.owlCarousel({
-      items : 10, //10 items above 1000px browser width
-      itemsDesktop : [1000,5], //5 items between 1000px and 901px
-      itemsDesktopSmall : [900,3], // betweem 900px and 601px
-      itemsTablet: [600,2], //2 items between 600 and 0
-      itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
-  });
+     margin:20,
+    loop:false,
+    autoWidth:true,
+   
+});
   
   $(".item").click(function(){
 	debugger;
